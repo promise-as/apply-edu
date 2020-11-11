@@ -345,12 +345,16 @@ i {
 }
 
 .footer {
-  padding: 0.1333333333rem 0;
+  padding: 0.1866666667rem 0;
   line-height: 0.5066666667rem;
   font-size: 0.2933333333rem;
   color: #666666;
   background-color: #eaeaea;
   text-align: center;
+}
+.footer .blank {
+  display: inline-block;
+  width: 0.4rem;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -349,10 +349,14 @@ $padding: pr(30px);
   }
 }
 .footer {
-  padding: pr(10px) 0;
+  padding: pr(14px) 0;
   line-height: pr(38px);
   font-size: pr(22px);
   color: #666666;
   background-color: #eaeaea;
   text-align: center;
+  .blank{
+    display: inline-block;
+    width: pr(30px);
+  }
 }
