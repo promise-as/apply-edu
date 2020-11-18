@@ -9,6 +9,17 @@
   <script type="text/javascript" src="https://img.thea.cn/public/js/thea.debug.js"></script>
   <link rel="stylesheet" href="https://img.thea.cn/public/platform/thea/202011/hbj/apply-edu/css/index.css">
   <script type="text/javascript" src="https://img.thea.cn/public/js/jquery-1.12.3.min.js"></script>
+  <!-- 安装基础代码 -->
+  <!-- ks-trace -->
+  <script type="text/javascript">
+    (function (root) {
+      var ksscript = document.createElement('script');
+      ksscript.setAttribute('charset', 'utf-8');
+      ksscript.src = 'https://static.yximgs.com/udata/pkg/ks-ad-trace-sdk/ks-trace.3.1.0.min.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ksscript, s);
+    })(window);
+  </script>
+  <!-- end ks-trace -->
 </head>
 
 <body>
@@ -208,6 +219,12 @@
   </script>
   <script>theaMsForm($('.sign-in'));</script>
   <script src="https://img.thea.cn/public/platform/thea/202011/hbj/apply-edu/js/index.js"></script>
+  <script>
+    // 安装转化代码
+    _ks_trace.push({
+      event: 'form', convertId: 147074, cb: function () { console.log('Your callback function here!') }
+    })
+  </script>
 </body>
 
 </html>
